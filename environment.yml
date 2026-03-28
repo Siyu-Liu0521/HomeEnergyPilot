@@ -1,0 +1,22 @@
+# Conda environment for HomeEnergyPilot
+# Create: conda env create -f environment.yml
+# Activate: conda activate home_energy_pilot
+# Update:   conda env update -f environment.yml --prune
+
+name: home_energy_pilot
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.24
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - scikit-learn>=1.3
+  - tqdm>=4.65
+  - pip:
+      - tensorflow>=2.13.0
+      - gymnasium>=0.29.0
